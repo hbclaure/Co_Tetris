@@ -1,0 +1,448 @@
+html, body{
+	height:100%;
+}
+
+body{
+	background: #3f3f3f;
+	margin:0;
+	padding:0;
+	position: relative;
+	/* font-family: 'American Typewriter','Marker Felt'; */
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.modal {
+	background-color: white;	
+}
+
+#landing{
+	/* font-family: 'Lucida Sans Unicode', 'Lucida Grande'; */
+}
+
+#landing h1, p{
+	margin: 10px
+}
+
+#logo-bar{
+	height: 80px
+}
+
+.logo{
+	height: 80px;
+	padding: 0 10px;
+}
+
+#instructions{
+	display: flex;
+}
+
+.graphics{ 
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 375px;
+	margin: 20px 50px;
+	border-collapse: collapse;
+}
+
+caption {
+	font-size: 30px;
+}
+
+.scoring{ 
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px
+}
+
+button{
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	margin: 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+	color: whitesmoke;
+	background-color: #2f2f2f
+}
+
+#start{
+	/* When Landing page exists
+	display: none; */
+
+	/* When not Landing page */
+	display: flex;
+}
+
+.center{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.input-legend {
+	margin-bottom: 10px;
+}
+
+.input-field {
+	width: 100%;
+	border: 2px solid black;
+	height: 30px;
+	padding: 5px 0;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+.input-wrapper{
+	text-align: center;
+	width: 200px;
+	padding: 10px 0; 
+}
+
+.submit-button {
+	width: 100%;
+	background-color: black;
+	border: none;
+	color: white;
+	height: 40px;
+	padding: 5px 0;
+	margin-top: 10px;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.submit-button:hover{
+	color: whitesmoke;
+	background-color: #2f2f2f;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.notification{
+	text-align: center;
+	font-size:14px;
+	padding: 5px 10px; 
+    background: #fff;
+	position: absolute;
+	top: 250px;
+	/* Left bar exist: left: 275px ; */
+	left: 125px;
+	opacity: 0;
+	z-index: 100;
+	transform: translateX( -50% );
+}
+
+#imageNotification{
+
+	position: relative;
+	max-height: 64%;
+	/* Left bar exist: left: 275px ; */
+	left:130px;
+	top:80px;
+	max-width:64%;
+	opacity: 1;
+	z-index: 100;
+	transform: translateX( -50% );
+
+
+	
+}
+
+
+#AIPairingImage{
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+    width:70%;
+	opacity: 1;
+}
+
+.fadeEffect {
+	transition: opacity .2s ease-in-out;
+}
+
+.humanIcon {
+  	height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.aiIcon {
+  	height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30%;
+}
+
+.main_keyboard {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-height: 100px;
+}
+
+#tetris{
+	left:50%;
+	top:50%;
+	position: absolute;
+	background: black;
+	display: none
+}
+
+#leftStatusBar {
+	background-color: #706c61;
+}
+
+#scene{
+	height:100%;
+	position: absolute;
+	background: #2f2f2f;
+}
+
+#quitGame{
+	height:100%;
+	position: absolute;
+	background:rgba(0,0,0,.75);
+	z-index:999;
+	color:#ffe100;
+	text-align: center;
+	display: none;
+}
+
+#quitGame h1{
+	margin-top:50%;
+}
+
+/*redirect-ufrl*/
+#quitGame a, #quitGame a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+#quitGame #redirect{
+	color: rgb(81, 255, 0);
+}
+
+#quitGame h3{
+	color:orange;
+}
+
+#gameOver{
+	height:100%;
+	position: absolute;
+	background:rgba(0,0,0,.75);
+	z-index:999;
+	color:#ffe100;
+	text-align: center;
+	display: none;
+}
+
+#gameOver h1{
+	margin-top:50%;
+}
+
+/*redirect-ufrl*/
+#gameOver a, #gameOver a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+#gameOver #redirect{
+	color: rgb(81, 255, 0);
+}
+
+#gameOver h3{
+	color:orange;
+}
+
+#survey{
+	/*text-align: center;*/
+
+}
+
+#side{
+	height:100%;
+	position: absolute;
+	top:0;
+	right:0;
+	text-align: center;
+	display: flex;
+}
+
+#quitBoard{
+    background-color: #3f3f3f;
+    /* Use when message board exists
+    flex: 0 0 20%; */
+    /*Use when message board does not exist*/
+    flex: 0 0 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+#gameStatusBoard{
+	/*Use when message board exists*/
+	/*flex: 0 0 40%;*/
+	/*Use when remove message board*/
+	flex: 0 0 70%;
+	background-color: #706c61;
+}
+
+
+/* Chat Start */
+#messageBoard{
+	/*Use when delete message board*/
+	background-color: #3f3f3f;
+	/* Use when use message board */
+	/*background-color: #ffffff; */
+	flex: 0 0 40%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#messengerHeader{
+	flex: 0 0 10%;
+	color:#000;
+	font-size:18px;
+}
+
+#chatWindow{
+	flex: 0 0 70%;
+	text-align: left;
+	overflow:auto;
+	word-wrap: break-word;	
+}
+
+ul {
+	padding: 5px 20px;
+} 
+
+#messages {
+	margin-top: 0;
+}
+
+#textInputDiv{
+	flex: 1;
+}
+
+#textInput {
+	width:80%;
+}
+/* Chat End */
+
+#info{
+	width:160px; /* Make side wider  */
+	margin:0 auto;
+	max-height:100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#levelInfo{
+	color:#fff;
+	font-size:18px;
+}
+
+#leftInfo{
+	color:#fff;
+	font-size:18px;
+	text-align: center;
+}
+
+
+#level{
+	color:orange;
+	font-size:32px;
+}
+
+#scoreInfo{
+	color:#fff;
+	font-size: 18px;
+	margin-top: 10px  0;
+}
+
+#score {
+	color:orange;
+	font-family: 'Chalkboard SE';
+}
+
+#distributer {
+	color:orange;
+}
+
+#player, #turn, #play-count, #turn-count{
+	color:orange;
+	font-family: 'Chalkboard SE';
+}
+
+#rewardInfo{
+	color:yellow;
+	font-weight: bold;
+	height:20px;
+}
+
+
+ul.firstPlayer{
+	color:red;
+}
+
+ul.secondPlayer{
+	color:blue;
+}
+
+#preview{
+	width:80px;
+	height:80px;
+	background: #2f2f2f;
+	margin:10px auto;
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}

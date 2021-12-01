@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tetris</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="./images/favicon.png">
+</head>
+
+<body>
+	<div class="modal" id="modal">
+		<!-- Landing Page -->
+	<!-- 	<div id = "landing">
+			<div id = "logo-bar">
+				<img class="logo" style = "float: left" src="./images/robots_in_groups_logo.gif" alt="Robots in Group Logo">
+				<img class="logo" style = "float: right" src="./images/cornell_logo.png" alt="Cornell University Logo">
+			</div>
+			<div id = "instructions" class = "center">
+				<h1 style = "text-decoration: underline" > CO-OP TETRIS </h1>
+				<h1> Instructions: </h1>
+				<p style = "max-width: 70%; margin: 0px"> Upon submitting your ID, you will be paired with a live player. You and the other player will take turns building on
+					the screen. </p>
+				<p style = "max-width: 70%; margin-bottom: 20px; margin-top: 0px">You will be able to communicate through the messenger chat system on the right of the playing screen. </p>
+				<video width="75%" height="75%" controls>
+					<source src="./images/tetris_instructions_05.07.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<p> Comment all of this: Different blocks will drop from the top of the screen into a box.</p>
+				<p> Each block is made up of 4 small squares, arranged into different shapes. </p>
+				<p> As the blocks fall, they can be <b> rotated </b> by the <b> Up/Down arrow keys</b> or <b> moved horizontally </b> by the <b>L/R arrow keys.</b></p>
+				</br>
+				<p> The objective of the game is to make complete horizontal lines by building and moving the blocks.</p>
+				<p> When a horizontal line is completed, that line will be "destroyed" or eliminated, earning you points. </p>
+
+				<div style = "margin-top: 25px;">
+					<table class = "graphics">
+						<caption>Game Keys:</caption>
+						<tr>
+							<th> <img src="./images/keys.png" alt="keyboard arrow keys" style="height: 175px"> </th>
+							<th>
+								<p>L/R: Move block left and right</p>
+								<p>Up: Rotate block</p>
+								<p>Down: Increase drop speed</p>
+							</th>
+						</tr>
+						<tr>
+							<th> <img src="./images/space.png" style="height: 45px"> </th>
+							<th>Space: Drop block</th>
+						</tr>
+					</table>
+
+					<table class = "graphics">
+						<caption style = "margin: 0 0 2px 0">Scoring:</caption>
+						<tr>
+							<th class = "scoring">1 line</th>
+							<th class = "scoring">40 points</th>
+						</tr>
+						<tr>
+							<th class = "scoring">2 lines</th>
+							<th class = "scoring">100 points</th>
+						</tr>
+						<tr>
+							<th class = "scoring">3 lines</th>
+							<th class = "scoring">300 points </th>
+						</tr>
+						<tr>
+							<th class = "scoring">4 lines </th>
+							<th class = "scoring">1200 points</th>
+						</tr>
+						<tr>
+							<th class="scoring">Soft Drop</th>
+							<th class="scoring">1 point</th>
+						</tr>
+						<tr>
+							<th class="scoring">Hard Drop</th>
+							<th class="scoring" style ="max-width: 250px"> Points porportional to distance from bottom</th>
+						</tr>
+					</table>
+					comment this image graphics
+					<img class = "graphics" src = "./images/tetris.gif" >
+				</div>
+				<button onClick= "toForm(event)">Go to Game</button>
+			</div>
+		</div> -->
+
+
+		<!-- Form Page -->
+		<div id = "start" class = "center">
+			<form id ="form">
+				<!--Player Name  -->
+				<div class="input-wrapper">
+					<legend for="playerName" class="input-legend">Paste Your MTurk Worker ID Below</legend>
+					<input type="text" name="playerName" id="playerName" class="input-field" pattern=".{3,}" required
+					title="Name must contain 3 characters minimum" required />
+				</div>
+				<!--Game Id -->
+				<!-- <div class="input-wrapper">
+					<legend for="gameId" class="input-legend">Game Id</legend>
+					<input type="text" name="gameId" id="gameId" class="input-field" pattern=".{3,}" required
+						title="3 characters minimum" />
+				</div> -->
+				<!-- Submit Button -->
+				<div class="input-wrapper">
+					<input type="submit" class="submit-button" id="submit" onclick="handleStart(event)" />
+				</div>
+			</form>
+
+			<span id = "DupPlayerMessage" ></span>
+
+			<span class="notification fadeEffect" id="message"> Please wait as you are being paired with another partner ...</span>
+
+ 			<span id = "AIPairingMessage"> </span>
+			<div id = "AIPairingImage" ></div>
+
+
+			<span class = "notification fadeEffect" id = "endPairMessage">
+				Matching period has timed out, please Click Here to continue
+				<h2><a href="https://cornell.ca1.qualtrics.com/jfe/form/SV_0l9NiIiDFfVXReB" target="_blank" id="redirect-url">Click Here</a> <h2>
+			</span>
+		</div>
+	</div>
+
+	<!-- Notification Button -->
+
+
+	<!-- Tetris Page -->
+	<div id="tetris">
+		<span class="notification fadeEffect" id="notification">
+			Players Turn
+		</span>
+
+		<div id = "imageNotification" ></div>
+
+		<!-- Team Member Status Left Bar -->
+		<!-- <div id="leftStatusBar">
+			<h1 id = "leftInfo" style= "font-size: 21px"> Your Team </h1>
+			<tr>
+				<th> <img src="./images/humanIcon.png" class = "humanIcon" alt="human icon"> </th> -->
+		<!--  Image src https://www.kindpng.com/imgv/iihmiiJ_person-icon-png-transparent-png/ -->
+		<!-- 	</tr>
+			<h1 id = "leftInfo"> Mturk Worker </h1>
+			<h1 id = "leftInfo"> Role: Player </h1>
+
+			<tr>
+				<th> <img src="./images/ai_icon.png" class = "aiIcon" alt="ai icon"> </th>
+			Image src https://essenceglobal.com/article/visualizing-ai-essence-and-noun-project-introduce-ai-icon-collection
+		</tr>
+
+			<h1 id = "leftInfo"> AI System</h1>
+			<h1 id = "leftInfo"> Role: Distribute Turns </h1> -->
+
+
+
+ 		<!--Uncomment for human conditions -->
+	 	<!-- 	<tr>
+				<th> <img src="./images/humanIcon.png" class = "humanIcon" alt="human icon"> </th>			Image src https://essenceglobal.com/article/visualizing-ai-essence-and-noun-project-introduce-ai-icon-collection
+		</tr>
+
+			<h1 id = "leftInfo"> Human Player </h1>
+			<h1 id = "leftInfo"> Role: Distribute Turns </h1>
+
+		</div>
+ -->
+		<canvas id="scene"></canvas>
+		<!-- Screen when both players play till the end of the game -->
+		<div id="gameOver">
+			<span style= "font-size: 40px"> Game Over!</span>
+			<h3>Score: <span id="finalScore">0</span></h3>
+			<h3 id="redirect">Thank you for completing the game. </h3>
+			<h3>Please complete the post-survey questionnaires to receive compensation. You will NOT be paid if you do not click Click Here button</h3>
+			<h2> Your name: <span id="gameOverPlayer"></span></h2>
+			<h2> Partner name: <span id = "partnerOverPlayer"> </span></h2>
+			<h2> Validation Number: 29875 </h2>
+			<!-- <h4>Validation Number: 29678</span></h4> -->
+			<!-- <button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_a9H38Ebqar6TMTY')">Click Here </button>-->  <!-- use this-->
+			<button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_0CHhqqX64fEOUBM')">Click Here </button>
+		</div>
+
+		<!-- Screen when one of the player press quit -->
+		<div id="quitGame">
+			<span style= "font-size: 40px">  Game Over! </span>
+			<!-- <h3>Score: <span id="quitFinalScore">0</span></h3> -->
+			<h3 id="redirect"> Either you or your partner quit the game. Please complete the post-survey questionnaires to receive compensation. You will NOT be paid if you do not click Click Here button</h3>
+		<!-- 	<h2> Your name: <span id="quitGamePlayer"></span></h2>
+			<h2> Partner name: <span id ="partnerQuitPlayer"> </span></h2> -->
+			<h2> Validation Number: 29875 </h2>
+			<!--<button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_a9H38Ebqar6TMTY')">Click Here </button> -->
+
+			<button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_0CHhqqX64fEOUBM')">Click Here </button>
+		</div>
+
+		<div id="side">
+			<div id="gameStatusBoard">
+				<div id="info">
+					<!-- <h1 id="levelInfo">Level: <br><span id="level">1</span></h1> -->
+					<h1 id="levelInfo" style = "background: #61706c; color: white; padding: 10px; margin-top: 0px"> Turn:<br><span id="turn"></span></h1>
+					<h1 id = "levelInfo"> Distributer: <br><span id = "distributer"> </span></h1>
+					<div id = "leftName">
+						<h2 id="levelInfo"> Your name:<br><span id="player"></span></h2>
+					</div>
+					<h2 id="scoreInfo"> Collective Score: <br><span id="score">0</span></h2>
+					<h1 id="levelInfo">Next Piece:<br></h1>
+
+					<canvas id="preview"></canvas>
+
+					<tr>
+						<th> <img src="./images/finb.png" class = "main_keyboard" alt="keyboard arrow keys"> </th>
+
+					</tr>
+					<h1 id="levelInfo" style="display: none">Play Count:<br><span id="play-count"></span></h1>
+					<h1 id="levelInfo" style="display: none">Turn Count:<br><span id="turn-count"></span></h1>
+					<div id="rewardInfo" style = "display: none">+<span id="reward">0</span></div>
+				</div>
+			</div>
+			<!--
+
+			<div id="messageBoard">
+				<h1 id="messengerHeader">Messenger<br></h1>
+				<div id="chatWindow">
+					<ul id="messages"></ul>
+				</div>
+				<div id="textInputDiv">
+					<form action="sendMessage()" style="padding-top: 30px">
+						<input id="textInput" autocomplete="on" placeholder="Type a message.."/>
+					</form>
+				</div>
+			</div> -->
+
+			<div id="quitBoard">
+				<button type ="button" id = "quitButton" onClick= "toQuit(event)" style = "bottom: 0%;
+				position: absolute">Quit Game</button>
+			</div>
+		</div>
+	</div>
+
+	<div id = "survey" style = "display: none; background-color: white" >
+		<div class= "flex-container" style= "display:flex">
+			<div style="flex:1">
+				<!-- <iframe src="https://cornell.ca1.qualtrics.com/jfe/form/SV_6sOpOUOZAlKigaW" height="1000px" width="1100px"></iframe> -->
+
+				<iframe id = 'qualtlink'  height="1000px" width="1100px"></iframe>
+
+
+
+			</div>
+			<div class= "flex_child" style = "flex:1; margin-top: 100px">
+<!-- 				<h2> Your MTurk ID: <span id="quitGamePlayer"></span></h2>
+				<h2> Partner's ID: <span id ="partnerQuitPlayer"> </span></h2> -->
+				<h2>Score: <span id="quitFinalScore">0</span></h2>
+				<button onClick= "codeQualtrics()">CLICK HERE TO COPY GAME ID TO CLIPBOARD</button>
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script src="dist/index.js"></script>
+<script>
+
+	var currentUrl = window.location.href;
+	var redirectURL = window.location.search;
+	if (redirectURL) {
+		redirectURL = redirectURL.substr(redirectURL.indexOf("=") + 1);
+		document.getElementById("redirect-url").href = redirectURL;
+	}
+
+	var socket = io.connect(currentUrl);
+	var playerName;
+	var gameId;
+	var tetris;
+	var firstPlayer = 'first';
+	var secondPlayer = 'second';
+
+
+	$(function sendMessage() {
+		$('form').submit(function(e){
+	      e.preventDefault(); // prevents page reloading
+	      data = {msg:    $('#textInput').val(),
+	  			  gameId: tetris.gameId,
+	  			  senderName: tetris.playerName}
+	      socket.emit('chat message', data);
+	      $('#textInput').val('');
+	      return false;
+	    });
+	    socket.on('chat message', function(data){
+			// assigning different color to players chat
+	    	name = data.senderName;
+	 		if (firstPlayer == 'first'){
+	 			firstPlayer = data.senderName
+	 		}
+	 		else {
+	 			secondPlayer = data.senderName
+			}
+			var message;
+	 		if (data.senderName == firstPlayer) 	{
+				message = "<ul class=firstPlayer><b><em>" + data.senderName + "</b></em>" + ":  " + data.msg + "</ul>";
+			}
+			else {
+				message = "<ul class=secondPlayer><b><em>" + data.senderName + "</b></em>" + ":  " + data.msg + "</ul>";
+			}
+			// adding the new message to the chat list
+			$('#messages').append(message);
+			// scrolling down the chat window to the botton
+			var chatWindow = document.getElementById("chatWindow");
+			chatWindow.scrollTop = chatWindow.scrollHeight;
+	    })
+	  });
+
+	function random(){
+		document.getElementById("num-gen").innerHTML = Math.floor(Math.random() * 10);
+	}
+
+	function handleStart(e) {
+		e.preventDefault();
+		//gameId = document.getElementById("gameId").value;
+		playerName = document.getElementById("playerName").value;
+		tetris = new Tetris('tetris', socket, { gameId: gameId, playerName: playerName });
+		document.getElementById("form").style.display = "none";
+		tetris.pause();
+	}
+
+	function toForm(e){
+		e.preventDefault();
+		document.getElementById("landing").style.display = "none";
+		document.getElementById("start").style.display = "flex"
+	}
+
+	// quit button pressed
+	function toQuit(e){
+		e.preventDefault();
+		tetris.gameOver(true);;
+	}
+
+	function codeQualtrics(){
+		dist_val = ''
+		
+		if (tetris.is_AI == 0){
+			//AI
+			dist_val = "AZXIBB_34!@"
+		} else{
+			//Human
+			dist_val = "AZXIBB_$23i_"
+
+		}
+
+		var dummy = document.createElement("textarea");
+		document.body.appendChild(dummy);
+		dummy.value = dist_val;
+		dummy.select();
+   		document.execCommand("copy");
+   		document.body.removeChild(dummy);
+   		alert('ID has been copied!');
+
+
+	}
+
+
+
+</script>
+
+</html>

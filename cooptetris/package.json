@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev1": "webpack --mode development --watch",
+    "dev2": "nodemon -r dotenv/config app.js",
+    "dev": "npm-run-all --parallel dev1 dev2",
+    "heroku-postbuild": "webpack --mode production",
+    "data": "node -r dotenv/config data_extraction/extract_data.js"
+  },
+  "dependencies": {
+    "build": "^0.1.4",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "mongoose": "^5.5.0",
+    "morgan": "~1.9.0",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
