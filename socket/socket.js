@@ -217,8 +217,8 @@ function joinRoom(socket, io, data, options) {
 
         // Creating game instance for DB
         // Random is_AI distribution
-        var is_AI = Math.round(Math.random()); 
-        //var is_AI = 1;
+        //var is_AI = Math.round(Math.random()); 
+        var is_AI = 1;
         var decisisonMaker = " ";
         if (is_AI ==0) {
             decisionMaker = "AI";
