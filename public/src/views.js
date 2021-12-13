@@ -237,8 +237,16 @@ var tetrisView = {
 		turn.style.fontFamily = 'Lucida Sans Unicode', 'Lucida Grande';
 		turn.style.color = '#40bfc1';
 	},
-	setQualtLink: function (playerName,partnerName,is_AI) {
-		dist_new=''
+	setQualtLink: function (playerName,partnerName,is_AI,distribution) {
+		distribution_var = '';
+		if (distribution == 0){
+			distribution_var = "50/50";
+		} else{
+			distribution_var = "90/10";
+		}
+
+
+		dist_new='';
 
 		if (is_AI == 0){
 			dist_new= "AI";
@@ -246,8 +254,8 @@ var tetrisView = {
 		} else {
 			dist_new = "Human";
 		}
-		document.getElementById('qualtlink').src = "https://cornell.ca1.qualtrics.com/jfe/form/SV_6sOpOUOZAlKigaW" + "?PlayerID=" + playerName + "+?PartnerID="+ partnerName +"+?Distributer="+ dist_new;
-
+		document.getElementById('qualtlink').src = "https://cornell.ca1.qualtrics.com/jfe/form/SV_6sOpOUOZAlKigaW" + "?PlayerID=" + playerName + "+?PartnerID="+ partnerName +"+?Distributer="+ dist_new+"+?Distribution="+distribution_var;
+		console.log(document.getElementById('qualtlink').src );
 	},
 
 

@@ -175,6 +175,7 @@ function Tetris(id, socket, options) {
 	/** etc */
 	this.resetCount = 0; // number of times the matrix gets cleaned out bc a block touched the top of the matrix
 	this.init();
+	this.randVar = 0;
 }
 
 Tetris.prototype = {
@@ -216,6 +217,8 @@ Tetris.prototype = {
 			this.timeList = [];
 			this.is_AI = 0;
 			this.nextPlayerId = data.currentSocketId;
+			this.randVar = data.randVar;
+
 
 			console.log("this.nextplayerid join", this.nextPlayerId);
 
@@ -258,7 +261,7 @@ Tetris.prototype = {
 
 				//views.setQuitGamePlayer(this.playerName, this.partnerName); 
 				//views.setGameOverPlayer(this.playerName, this.partnerName);
-				views.setQualtLink(this.playerName, this.partnerName, this.is_AI)
+				views.setQualtLink(this.playerName, this.partnerName, this.is_AI,this.randVar);
 
 			}
 
@@ -778,6 +781,7 @@ Tetris.prototype = {
 				// this.currentTurn 
 				this._check();
 				this._fireShape();
+				console.log("BEFORE EMIT", this.randVar);
 				this.socketEmit("block_landed", {
 					gameId: this.gameId,
 					playerName: this.playerName,
@@ -795,7 +799,8 @@ Tetris.prototype = {
 					turnEnd: new Date().getTime(),
 					timeList: this.timeList,
 					matrix: this.matrix, 
-					maxTurns: this.MAX_TURNS
+					maxTurns: this.MAX_TURNS,
+					randVar: this.randVar
 
 				})
 				views.setTurnCount(this.turnCount);

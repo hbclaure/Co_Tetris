@@ -181,6 +181,10 @@ function joinRoom(socket, io, data, options) {
         let uniqueGameId = uuidv1();
         data.gameId = uniqueGameId;
 
+        //decide whether 90/10 or 50/50
+        var randVar = Math.round(Math.random());
+        console.log("CREATING RANDVAR", randVar);
+
         var gamePlayers = [];
         var playersTally = {};
 
@@ -255,7 +259,8 @@ function joinRoom(socket, io, data, options) {
             currentSocketId: currentPlayerSocketId,
             playersTally: playersTally,
             players: gamePlayers, //changed
-            quitButtonActivate: quitButtonActivate //let the quitButton be activated at the same time.
+            quitButtonActivate: quitButtonActivate, //let the quitButton be activated at the same time.
+            randVar:randVar // distribution 90/10 or 50/50
         })
 
     } else {
@@ -408,14 +413,26 @@ function blockLandedHandler(socket, io, data, options) {
                 nextPlayerId =  precomputeTurn(data, gamePlayers, MAX_GAME_PLAYERS);
 
             } else if (consts.USE_CONSTRAINT_CALC) {
-               // Randomize with constraints but equal distribution
+                console.log("WHAT IS RANDVAR", data.randVar)
 
-              // nextPlayerId = randomConstraint(turnObj, gamePlayers, data, MAX_GAME_PLAYERS);
-               // Randomize with 90/10 constraint
-              nextPlayerId = NinetyTenConstraint(turnObj, gamePlayers, data, MAX_GAME_PLAYERS);
-               // Randomize with 70/30 constraint
-               //nextPlayerId = SeventyThirtyConstraint(turnObj, gamePlayers, data, MAX_GAME_PLAYERS);
+                if (data.randVar == 0){
+                    console.log("50/50 Distribution")
+                    //50/50 dist
+                    // Randomize with constraints but equal distribution
+                    nextPlayerId = randomConstraint(turnObj, gamePlayers, data, MAX_GAME_PLAYERS);
+                }
+                else{
+                    console.log("90/10 Distribution")
 
+                    
+                    // Randomize with 90/10 constraint
+                    nextPlayerId = NinetyTenConstraint(turnObj, gamePlayers, data, MAX_GAME_PLAYERS);
+                    // Randomize with 70/30 constraint
+                    //nextPlayerId = SeventyThirtyConstraint(turnObj, gamePlayers, data, MAX_GAME_PLAYERS);
+
+                }
+               
+               
             // Each Person gets the Same Number of Turns
             } else {
                 nextPlayerId = gamePlayers[((data.turnCount) % MAX_GAME_PLAYERS)].socketId;
