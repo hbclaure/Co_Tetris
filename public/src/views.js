@@ -255,7 +255,6 @@ var tetrisView = {
 			dist_new = "Human";
 		}
 		document.getElementById('qualtlink').src = "https://cornell.ca1.qualtrics.com/jfe/form/SV_6sOpOUOZAlKigaW" + "?PlayerID=" + playerName + "+?PartnerID="+ partnerName +"+?Distributer="+ dist_new+"+?Distribution="+distribution_var;
-		console.log(document.getElementById('qualtlink').src );
 	},
 
 
@@ -385,8 +384,8 @@ var tetrisView = {
 		}
 		// time used for developement purposes
 		//setTimeout(displayBtn, 2000);
-		// actual time used for production purposes 7 minutes
-		setTimeout(displayBtn, 0); //420000
+		// actual time used for production purposes 5 minutes
+		setTimeout(displayBtn, 300000); //420000 - 7 min
 	}
 };
 
