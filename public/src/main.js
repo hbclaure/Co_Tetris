@@ -232,7 +232,7 @@ Tetris.prototype = {
 						end_pair: true
 					})
 
-				}, 600000 );
+				}, 1800000 ); //If no matching of players happens
 			} else {
 				views.setPairingMessage(false);
 
