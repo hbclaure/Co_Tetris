@@ -182,7 +182,7 @@ function joinRoom(socket, io, data, options) {
         data.gameId = uniqueGameId;
 
         //decide whether 90/10 or 50/50
-        var randVar = Math.round(Math.random());
+        var randVar = 1;// Math.round(Math.random());
         console.log("CREATING RANDVAR", randVar);
 
         var gamePlayers = [];
