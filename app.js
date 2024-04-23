@@ -18,7 +18,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 3000;
 
 const server = app.listen(PORT, console.log(`Server Started on ${PORT}`));
 

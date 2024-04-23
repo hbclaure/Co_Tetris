@@ -1,5 +1,7 @@
-# Fairness Games- Collaborative Tetris
-Co-Tetris is a Collaborative Tetris Game for understanding fairness in human-agent teams.  
+# Co-Tetris :video_game:
+Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
+
+The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. Collaborative Tetris Game for understanding fairness in human-agent teams.  
 The game is played by two players whom are logged into the system at the same time.
 
 This is authored by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung (PI) at Cornell University. 
