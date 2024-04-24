@@ -1,17 +1,17 @@
 # Co-Tetris :video_game:
 Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
-The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. Collaborative Tetris Game for understanding fairness in human-agent teams.  
-The game is played by two players whom are logged into the system at the same time.
+The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. A third player (preprogrammed) is charged with decididng who gets access to the falling Tetris block.  
 
-This is authored by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung (PI) at Cornell University. 
-[Members from USC] 
+A live version of the game can be found here. 
+
+This was developed by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung at Cornell University and Jignesh Modi and Stefanos Nicholaidis at the University of Southern California. 
 
 ### Game Visuals 
 
 <p align = "center">
-<img src="public/images/player1.gif" width="300"> <img src="public/images/player2.gif" width="300">
-<br>Player 1  & Player 2  </br>
+<img src="public/video/tetris_vid.mp4" width="300"> <img src="public/video/tetris_vid.mp4" width="300">
+<br> </br>
 </p>
 
 
