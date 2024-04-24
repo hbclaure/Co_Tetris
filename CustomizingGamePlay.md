@@ -1,34 +1,45 @@
-# Customizing Gameplay in Co-Tetris
+# Understanding and Customizing Gameplay in Co-Tetris
 
-## Adjusting the Number of Tetris Blocks per Player
+## Overview
 
-The Co-Tetris game is designed with flexibility in mind, allowing easy customization of how many Tetris blocks each player receives before the turn rotates. This feature is controlled by the `NUM_PLAYS` variable found in the `socket.js` file.
+The `Co-Tetris` project uses two critical JavaScript files to manage the game's functionality and appearance: `socket.js` and `consts.js`. Here's how they contribute to the game:
 
-### Constants Configuration
+- **`socket.js`**: This file is central to the multiplayer functionality of Co-Tetris. It manages real-time interactions between players through WebSocket connections. Key game functions like joining a game, handling game state updates, and processing player actions (e.g., block placements, messages) are implemented here.
+  
+- **`consts.js`**: This configuration file defines a wide range of constants that affect the gameplay and visual aspects of Co-Tetris. It includes settings for UI elements, game mechanics, and player options which are used across the game to maintain consistency and ease of management.
 
-The following settings in `public/src/consts.js` manage various gameplay aspects:
+## Customizing Game Settings
 
-```javascript
-module.exports = {
-   NUM_PLAYS: 5,  // Number of blocks per player per turn
-   NUM_PLAYERS: 2,  // Maximum number of players in a game
-   MAX_SCORE: 300  // Used for calculating Average Reward
-};
-```
+### Game Mechanics
 
+To modify how the game behaves, you can change values in `consts.js`. Here are some of the adjustable parameters and their impacts:
 
-**Modifying Block Distribution:**
-- **`NUM_PLAYS`**: Adjust this value to increase or decrease the number of blocks each player receives per turn. Higher values give a single player more blocks before rotating turns, affecting game difficulty and strategy.
+- **`NUM_PLAYS`**: Controls how many turns each player gets before the turn rotates.
+- **`NUM_PLAYERS`**: Sets the maximum number of players allowed in a game.
+- **`USE_TURN_CALC`**: Determines whether to use a complex algorithm for turn distribution among players.
+
+### Visual Settings
+
+Visual aspects like colors and sizes are also defined in `consts.js`, allowing for easy customization of the game's look and feel:
+
+- **`COLORS`**: An array of colors used for Tetris blocks.
+- **`SIDE_WIDTH`**: The width of the sidebar in the game interface.
+- **`SCENE_BG_START` and `SCENE_BG_END`**: Colors defining the background gradient of the play area.
+
+### Usage in `socket.js`
+
+The constants from `consts.js` are incorporated into `socket.js` through a `require` statement, making them accessible throughout the file. These constants are used to control game logic and respond to player interactions effectively. For example, the game uses `NUM_PLAYS` to determine if a player's turn is over or if the ghost piece functionality (`USE_GHOST_SHAPE`) should be enabled.
+
 
 ### Turn Management Logic
 
-Turn rotation is managed in the `blockLandedHandler` function, which is triggered every time a block lands. This function checks if the current number of blocks a player has received matches the quota set by `NUM_PLAYS`, and if so, it selects which palyer has the next turn.
+Turn rotation is managed in the `blockLandedHandler` function (in `socket.js`), which is triggered every time a block lands. This function checks if the current number of blocks a player has received matches the quota set by `NUM_PLAYS`, and if so, it selects which palyer has the next turn.
 
 ## Turn Management in Co-Tetris
 
 ### Overview
 
-The turn management system in Co-Tetris uses a dynamic allocation method that supports both random and strategic distributions. This system helps maintain balance and fairness in competitive gameplay.
+The turn management system in Co-Tetris in `socket.js` uses a dynamic allocation method that supports both random and strategic distributions. This system helps maintain balance and fairness in competitive gameplay.
 
 ### Configuration Options
 
