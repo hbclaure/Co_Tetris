@@ -97,7 +97,7 @@ git push heroku master
 7. **Ensure the MongoDB URI is set in Heroku:**
 Set your environment variables (s`MONGO_URI`) in Heroku's settings under "Config Vars" to match those in your `.env` file.
 
-8. ** Running the Application on Heroku:** Navigate to your application's URL provided by Heroku to see your Co-Tetris game live.
+8. **Running the Application on Heroku:** Navigate to your application's URL provided by Heroku to see your Co-Tetris game live.
 
 ## Customizing Gameplay
 [Click here](CustomizingGamePlay.md) to learn how to customize the Co-Tetris game. 
