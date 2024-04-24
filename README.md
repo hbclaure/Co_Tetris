@@ -13,7 +13,7 @@ A live version of the game can be found here. Note that gameplay requires two pe
 ```
 cooptetris.herokuapp.com
 ```
-This game was developed at Cornell University by Houston Claure, Seyun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and Malte Jung, in collaboration with Jignesh Modi and Stefanos Nicholaidis from the University of Southern California. 
+This game was developed at Cornell University by [Houston Claure](https://www.houstonclaure.com), [Seyun Kim](https://www.seyunkim.com), Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and [Malte Jung](https://mjung.infosci.cornell.edu), in collaboration with Jignesh Modi and [Stefanos Nicholaidis](http://www.stefanosnikolaidis.net) from the University of Southern California. 
 
 ### Co-Tetris Demonstration
 https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-acbb-2e6b408fbb32
