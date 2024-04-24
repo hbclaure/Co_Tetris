@@ -3,9 +3,9 @@
   <img src="https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/bf8dd158-aaa5-48af-9919-0ed996113f57" alt="tetrisGIF">
 </p>
 
-Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
+<p align="center">*Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents.*</p>
 
-The objective of the Co-Tetris is for multiple players to collaborate (or compete) to obtain the highest possible score. A third preprogrammed player is charged with decididng who gets access to the falling Tetris block. This repository enables you to run your own version of the game, either locally or online.
+The objective of the Co-Tetris is for multiple players to collaborate (or compete) to obtain the highest possible score. A third preprogrammed player is charged with decididng who gets access to the falling Tetris block. This repository enables you to run your own version of the game, either locally or online. Co-Tetris has been utilized for deploying reinforcement learning algorithms and studying how humans respond to AI-driven allocation decisions.
 
 A live version of the game can be found here. Note that gameplay requires two people to log in simultaneously:
 ```
