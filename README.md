@@ -3,9 +3,11 @@ Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
 The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. A third player (preprogrammed) is charged with decididng who gets access to the falling Tetris block.  
 
-A live version of the game can be found here. 
-
-This was developed by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung at Cornell University and Jignesh Modi and Stefanos Nicholaidis at the University of Southern California. 
+A live version of the game can be found here:
+```
+cooptetris.herokuapp.com
+```
+This game was developed by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung at Cornell University and Jignesh Modi and Stefanos Nicholaidis at the University of Southern California. 
 
 ### Game Visuals 
 https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-acbb-2e6b408fbb32
@@ -16,12 +18,11 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 <br> </br>
 </p>
 
+## Research Paper Using Co-Tetris
+- Claure, H., Kim, S., Kizilcec, R. F., & Jung, M. (2023). The social consequences of machine allocation behavior: Fairness, interpersonal perceptions and performance. Computers in Human Behavior.
 
-### Online Link 
-The URL of Co-Tetris:
-```
-cooptetris.herokuapp.com
-```
+- Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction 
+
 
 ## Set-up
 
