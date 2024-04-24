@@ -97,5 +97,10 @@ Set your environment variables (s`MONGO_URI`) in Heroku's settings under "Config
 
 8. ** Running the Application on Heroku:** Navigate to your application's URL provided by Heroku to see your Co-Tetris game live.
 
+## Customizing Gameplay
+[Click here] (CustomizingGamePlay.md) to learn how to customize the Co-Tetris game. 
+
+
+
 
 
