@@ -1,13 +1,22 @@
 # Co-Tetris :video_game:
 Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
-The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. A third player (preprogrammed) is charged with decididng who gets access to the falling Tetris block.  
+The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. A third player (preprogrammed) is charged with decididng who gets access to the falling Tetris block. This repo will help you run your own version of the game locally or online.
 
-A live version of the game can be found here:
+A live version of the game can be found here. To play you will need two people to log in simulatneously:
 ```
 cooptetris.herokuapp.com
 ```
-This game was developed by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung at Cornell University and Jignesh Modi and Stefanos Nicholaidis at the University of Southern California. 
+This game was developed by:
+
+*Houston Claure (Cornell University)
+*Seyun Kim (Cornell University)
+*Winnice Hui (Cornell University)
+*Obinna Abbi (Cornell University)
+*Hyun Kyo Jung (Cornell University)
+*Malte Jung (Cornell University)
+Jignesh Modi (University of Southern California)
+Stefanos Nicholaidis (University of Southern California)
 
 ### Game Visuals 
 https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-acbb-2e6b408fbb32
