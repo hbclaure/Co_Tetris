@@ -27,13 +27,16 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 ## Running the Game on Your Local Computer
 
 ### Requirements
-1. Node.js & NPM <br>
-https://nodejs.org/en/download/ <br> 
-https://www.npmjs.com/get-npm
-2. Heroku CLI (if deploying to herokuapp)  <br>
-https://devcenter.heroku.com/articles/heroku-cli#download-and-install
-3. MongoDB <br>
-https://account.mongodb.com/account/login?signedOut=true
+1. **Node.js & NPM** - Required for running the server and installing dependencies.
+   - [Download Node.js](https://nodejs.org/en/download/)
+   - [Get NPM](https://www.npmjs.com/get-npm)
+2. **Heroku CLI** - Required if deploying to Heroku.
+   - [Download and Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+3. **MongoDB** - A MongoDB database is essential for storing game data like player scores and game states.
+   - [Sign up or Log in to MongoDB](https://account.mongodb.com/account/login?signedOut=true)
+
+### Installation
+1. **Clone the repository onto your local machine:**
 
 ### Installation
 1. Clone repository onto local machine.
@@ -60,16 +63,8 @@ npm install
 ```
 
 6. **Run the application:**
-Navigate to `localhost:3000` in your web browser to see the application running locally on your machine.
+Navigate to `localhost:3000` in your web browser to see the application running locally on your machine. You will need to log in on at least two tabs to connect to the game. 
 
-
-
-Create .env file in top folder of local repository. <br> 
-Copy the following into the .env file. <br> 
-#Mongo DB connection information <br> 
-MONGO_URI  = mongodb+srv://hbclaure:Tetrisgame123@cluster0-uygx4.mongodb.net/collab_tetris_dev?retryWrites=true&w=majority
-4. Install dependencies by running  "npm install"
-5. Navigate to "localhost:3000" on local web browser. You should be able to see the application running locally on your machine.
 
 ## Deploying the Game Online
 
