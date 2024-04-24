@@ -10,7 +10,7 @@ This was developed by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun
 ### Game Visuals 
 
 <p align = "center">
-<img src="public/video/tetris_vid.mp4" width="300"> <img src="public/video/tetris_vid.mp4" width="300">
+<img src="public/video/tetris_vid.mp4" width="600"> 
 <br> </br>
 </p>
 
