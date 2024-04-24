@@ -1,15 +1,15 @@
 # Co-Tetris :video_game:
 Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
-The goal of the game is for multiple players to collaborate (or compete) to obtain the highest possible score. A third player (preprogrammed) is charged with decididng who gets access to the falling Tetris block. This repo will help you run your own version of the game locally or online.
+The objective of the Co-Tetris is for multiple players to collaborate (or compete) to obtain the highest possible score. A third preprogrammed player is charged with decididng who gets access to the falling Tetris block. This repository enables you to run your own version of the game, either locally or online.
 
-A live version of the game can be found here. To play you will need two people to log in simulatneously:
+A live version of the game can be found here. Note that gameplay requires two people to log in simulatneously:
 ```
 cooptetris.herokuapp.com
 ```
 This game was developed at Cornell University by Houston Claure, Seyun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and Malte Jung, in collaboration with Jignesh Modi and Stefanos Nicholaidis from the University of Southern California. 
 
-### Game Visuals 
+### Game Video 
 https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-acbb-2e6b408fbb32
 
 
@@ -21,7 +21,7 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 ## Research Paper Using Co-Tetris
 - Claure, H., Kim, S., Kizilcec, R. F., & Jung, M. (2023). The social consequences of machine allocation behavior: Fairness, interpersonal perceptions and performance. Computers in Human Behavior.
 
-- Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction 
+- Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction. 
 
 
 ## Set-up
