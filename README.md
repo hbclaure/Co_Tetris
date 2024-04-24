@@ -24,7 +24,7 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 - Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction. 
 
 
-## Set-up
+## Running the Game on Your Local Computer
 
 ### Requirements
 1. Node.js & NPM <br>
@@ -32,6 +32,8 @@ https://nodejs.org/en/download/ <br>
 https://www.npmjs.com/get-npm
 2. Heroku CLI (if deploying to herokuapp)  <br>
 https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+3. MongoDB
+https://account.mongodb.com/account/login?signedOut=true
 
 ### Installation
 1. Clone repository onto local machine.
