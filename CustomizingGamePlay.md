@@ -73,20 +73,16 @@ If you want to adjust the images or insert your own custom images, this can be d
 - `../images/AI_Distributer.png` for the AI allocator
 - `../images/MTurkWorker_Distributer.png` for the human allocator
 
-## Adjusting Gameplay Duration and Postgame Messages
+## Adjusting Gameplay Duration 
 
 You can customize how long the "Quit Game" button remains hidden by adjusting `setTimeout` in the `views.js` file: 
-
 ```javascript
-	activateQuitButton: function(){
-		console.log("enter activate quitButton");
-    	quitButton.style.display = "none";
-    	function displayBtn() {
-    		quitButton.style.display = "inline";
-		}
-		// time used for developement purposes
-		setTimeout(displayBtn, 100); //Adjust how long before the quit button is programmed to appear 
+activateQuitButton: function(){
+    console.log("enter activate quitButton");
+    quitButton.style.display = "none";
+    function displayBtn() {
+        quitButton.style.display = "inline";
+    }
+    // time used for developement purposes
+    setTimeout(displayBtn, 100); //Adjust how long before the quit button is programmed to appear 
 ```
-
-
-When a player clicks on the button to quit the game, you can adjust what message 
