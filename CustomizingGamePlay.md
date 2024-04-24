@@ -31,15 +31,13 @@ Visual aspects like colors and sizes are also defined in `consts.js`, allowing f
 The constants from `consts.js` are incorporated into `socket.js` through a `require` statement, making them accessible throughout the file. These constants are used to control game logic and respond to player interactions effectively. For example, the game uses `NUM_PLAYS` to determine if a player's turn is over or if the ghost piece functionality (`USE_GHOST_SHAPE`) should be enabled.
 
 
-### Turn Management Logic
-
-Turn rotation is managed in the `blockLandedHandler` function (in `socket.js`), which is triggered every time a block lands. This function checks if the current number of blocks a player has received matches the quota set by `NUM_PLAYS`, and if so, it selects which palyer has the next turn.
 
 ## Turn Management in Co-Tetris
 
 ### Overview
 
-The turn management system in Co-Tetris in `socket.js` uses a dynamic allocation method that supports both random and strategic distributions. This system helps maintain balance and fairness in competitive gameplay.
+Turn rotation is managed in the `blockLandedHandler` function (in `socket.js`), which is triggered every time a block lands. This function checks if the current number of blocks a player has received matches the quota set by `NUM_PLAYS`, and if so, it selects which player has the next turn.
+
 
 ### Configuration Options
 
@@ -64,3 +62,14 @@ if ((data.turnCount < MAX_GAME_PLAYERS) || !(consts.USE_TURN_CALC)) {
 ### Customization
 
 You can modify the logic by changing parameters in `consts.js` or by adjusting decision algorithms within `blockLandedHandler` to accommodate different gameplay styles or research needs.
+
+## Customizing Distributer
+
+You can customize whether the distributer of blocks is presented as an AI agent or a human. This can be adjusted in the `socket.js` file. The `is_AI` variable can be adjusted as follows:
+- `var is_AI = 0` . This sets the distributer to be presented as an AI agent
+- `var is_AI = 1` . This sets the distributer to presented as a human
+
+If you want to adjust the images or insert your own custom images, this can be done by changing the following files:
+- `../images/AI_Distributer.png` for the AI distributer
+- `../images/MTurkWorker_Distributer.png` for the human distributer
+
