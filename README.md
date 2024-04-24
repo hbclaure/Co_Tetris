@@ -35,11 +35,10 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 3. **MongoDB** - A MongoDB database is essential for storing game data like player scores and game states.
    - [Sign up or Log in to MongoDB](https://account.mongodb.com/account/login?signedOut=true)
 
-### Installation
-1. **Clone the repository onto your local machine:**
+
 
 ### Installation
-1. Clone repository onto local machine.
+1. **Clone repository onto local machine.**
 ```
 git clone CoTetris
 ```
