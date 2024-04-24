@@ -45,13 +45,14 @@ git clone CoTetris
 3. Create a `.env` file in the top directory of your local repository
 
 4. **Set up your MongoDB connection:**
-Add the following to your `.env` file, replacing `username`, `password`, and `your-database-url` with your MongoDB credentials:
+Add the following to your `.env` file, replacing `username`, `password`, `appName`, and `your-database-url` with your MongoDB credentials:
 ```
-MONGO_URI=mongodb+srv://username:password@your-database-url/collab_tetris_dev?retryWrites=true&w=majority
+MONGO_URI= 'mongodb+srv://username:password@your-database-url/appName?retryWrites=true&w=majority'
 ```
 - `username`: Your MongoDB username
 - `password`: Your MongoDB password
 - `your-database-url`: The URL provided by MongoDB when you set up your cluster
+- `appName`: Your database name 
 
 5. **Install dependencies:**
 ```
