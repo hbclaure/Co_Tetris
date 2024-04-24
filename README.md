@@ -3,7 +3,7 @@ Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
 The objective of the Co-Tetris is for multiple players to collaborate (or compete) to obtain the highest possible score. A third preprogrammed player is charged with decididng who gets access to the falling Tetris block. This repository enables you to run your own version of the game, either locally or online.
 
-A live version of the game can be found here. Note that gameplay requires two people to log in simulatneously:
+A live version of the game can be found here. Note that gameplay requires two people to log in simultaneously:
 ```
 cooptetris.herokuapp.com
 ```
@@ -32,7 +32,7 @@ https://nodejs.org/en/download/ <br>
 https://www.npmjs.com/get-npm
 2. Heroku CLI (if deploying to herokuapp)  <br>
 https://devcenter.heroku.com/articles/heroku-cli#download-and-install
-3. MongoDB
+3. MongoDB <br>
 https://account.mongodb.com/account/login?signedOut=true
 
 ### Installation
@@ -43,6 +43,9 @@ Copy the following into the .env file. <br>
 #Mongo DB connection information <br> 
 MONGO_URI  = mongodb+srv://hbclaure:Tetrisgame123@cluster0-uygx4.mongodb.net/collab_tetris_dev?retryWrites=true&w=majority
 4. Install dependencies by running  "npm install"
+5. Navigate to "localhost:3000" on local web browser. You should be able to see the application running locally on your machine.
+
+## Deploying the Game Online
 
 ### Heroku Set-up (for deployment purposes)
 1. Sign in to Heroku account. You may use below information, or your own account.  <br>
@@ -56,10 +59,7 @@ Make sure to download heroku dependencies https://devcenter.heroku.com/articles/
 3. Check that the heroku remote has 4 outputs.  <br>
       Run: "git remote -v"
 
-### Run Project Locally
-1. Navigate to respository folder 'Final_Tetris_Jan2020' in Terminal.
-2. Run: "npm run dev". 
-3. Navigate to "localhost:5000" on local web browser. You should be able to see the application running locally on your machine.
+
 
 ## Pushing Edits
 
