@@ -13,80 +13,6 @@
 
 <body>
 	<div class="modal" id="modal">
-		<!-- Landing Page -->
-	<!-- 	<div id = "landing">
-			<div id = "logo-bar">
-				<img class="logo" style = "float: left" src="./images/robots_in_groups_logo.gif" alt="Robots in Group Logo">
-				<img class="logo" style = "float: right" src="./images/cornell_logo.png" alt="Cornell University Logo">
-			</div>
-			<div id = "instructions" class = "center">
-				<h1 style = "text-decoration: underline" > CO-OP TETRIS </h1>
-				<h1> Instructions: </h1>
-				<p style = "max-width: 70%; margin: 0px"> Upon submitting your ID, you will be paired with a live player. You and the other player will take turns building on
-					the screen. </p>
-				<p style = "max-width: 70%; margin-bottom: 20px; margin-top: 0px">You will be able to communicate through the messenger chat system on the right of the playing screen. </p>
-				<video width="75%" height="75%" controls>
-					<source src="./images/tetris_instructions_05.07.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-				<p> Comment all of this: Different blocks will drop from the top of the screen into a box.</p>
-				<p> Each block is made up of 4 small squares, arranged into different shapes. </p>
-				<p> As the blocks fall, they can be <b> rotated </b> by the <b> Up/Down arrow keys</b> or <b> moved horizontally </b> by the <b>L/R arrow keys.</b></p>
-				</br>
-				<p> The objective of the game is to make complete horizontal lines by building and moving the blocks.</p>
-				<p> When a horizontal line is completed, that line will be "destroyed" or eliminated, earning you points. </p>
-
-				<div style = "margin-top: 25px;">
-					<table class = "graphics">
-						<caption>Game Keys:</caption>
-						<tr>
-							<th> <img src="./images/keys.png" alt="keyboard arrow keys" style="height: 175px"> </th>
-							<th>
-								<p>L/R: Move block left and right</p>
-								<p>Up: Rotate block</p>
-								<p>Down: Increase drop speed</p>
-							</th>
-						</tr>
-						<tr>
-							<th> <img src="./images/space.png" style="height: 45px"> </th>
-							<th>Space: Drop block</th>
-						</tr>
-					</table>
-
-					<table class = "graphics">
-						<caption style = "margin: 0 0 2px 0">Scoring:</caption>
-						<tr>
-							<th class = "scoring">1 line</th>
-							<th class = "scoring">40 points</th>
-						</tr>
-						<tr>
-							<th class = "scoring">2 lines</th>
-							<th class = "scoring">100 points</th>
-						</tr>
-						<tr>
-							<th class = "scoring">3 lines</th>
-							<th class = "scoring">300 points </th>
-						</tr>
-						<tr>
-							<th class = "scoring">4 lines </th>
-							<th class = "scoring">1200 points</th>
-						</tr>
-						<tr>
-							<th class="scoring">Soft Drop</th>
-							<th class="scoring">1 point</th>
-						</tr>
-						<tr>
-							<th class="scoring">Hard Drop</th>
-							<th class="scoring" style ="max-width: 250px"> Points porportional to distance from bottom</th>
-						</tr>
-					</table>
-					comment this image graphics
-					<img class = "graphics" src = "./images/tetris.gif" >
-				</div>
-				<button onClick= "toForm(event)">Go to Game</button>
-			</div>
-		</div> -->
-
 
 		<!-- Form Page -->
 		<div id = "start" class = "center">
@@ -116,11 +42,15 @@
  			<span id = "AIPairingMessage"> </span>
 			<div id = "AIPairingImage" ></div>
 
-
 			<span class = "notification fadeEffect" id = "endPairMessage">
+				Matching period has timed out, please refresh and try again. 
+			</span>
+
+
+			<!-- <span class = "notification fadeEffect" id = "endPairMessage">
 				Matching period has timed out, please Click Here to continue
 				<h2><a href="https://cornell.ca1.qualtrics.com/jfe/form/SV_0l9NiIiDFfVXReB" target="_blank" id="redirect-url">Click Here</a> <h2>
-			</span>
+			</span> -->
 		</div>
 	</div>
 
@@ -135,36 +65,7 @@
 
 		<div id = "imageNotification" ></div>
 
-		<!-- Team Member Status Left Bar -->
-		<!-- <div id="leftStatusBar">
-			<h1 id = "leftInfo" style= "font-size: 21px"> Your Team </h1>
-			<tr>
-				<th> <img src="./images/humanIcon.png" class = "humanIcon" alt="human icon"> </th> -->
-		<!--  Image src https://www.kindpng.com/imgv/iihmiiJ_person-icon-png-transparent-png/ -->
-		<!-- 	</tr>
-			<h1 id = "leftInfo"> Mturk Worker </h1>
-			<h1 id = "leftInfo"> Role: Player </h1>
 
-			<tr>
-				<th> <img src="./images/ai_icon.png" class = "aiIcon" alt="ai icon"> </th>
-			Image src https://essenceglobal.com/article/visualizing-ai-essence-and-noun-project-introduce-ai-icon-collection
-		</tr>
-
-			<h1 id = "leftInfo"> AI System</h1>
-			<h1 id = "leftInfo"> Role: Distribute Turns </h1> -->
-
-
-
- 		<!--Uncomment for human conditions -->
-	 	<!-- 	<tr>
-				<th> <img src="./images/humanIcon.png" class = "humanIcon" alt="human icon"> </th>			Image src https://essenceglobal.com/article/visualizing-ai-essence-and-noun-project-introduce-ai-icon-collection
-		</tr>
-
-			<h1 id = "leftInfo"> Human Player </h1>
-			<h1 id = "leftInfo"> Role: Distribute Turns </h1>
-
-		</div>
- -->
 		<canvas id="scene"></canvas>
 		<!-- Screen when both players play till the end of the game -->
 		<div id="gameOver">
@@ -175,9 +76,6 @@
 			<h2> Your name: <span id="gameOverPlayer"></span></h2>
 			<h2> Partner name: <span id = "partnerOverPlayer"> </span></h2>
 			<h2> Validation Number: 29875 </h2>
-			<!-- <h4>Validation Number: 29678</span></h4> -->
-			<!-- <button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_a9H38Ebqar6TMTY')">Click Here </button>-->  <!-- use this-->
-			<button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_0CHhqqX64fEOUBM')">Click Here </button>
 		</div>
 
 		<!-- Screen when one of the player press quit -->
@@ -188,9 +86,7 @@
 		<!-- 	<h2> Your name: <span id="quitGamePlayer"></span></h2>
 			<h2> Partner name: <span id ="partnerQuitPlayer"> </span></h2> -->
 			<h2> Validation Number: 29875 </h2>
-			<!--<button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_a9H38Ebqar6TMTY')">Click Here </button> -->
 
-			<button onclick =  "window.open('https://cornell.ca1.qualtrics.com/jfe/form/SV_0CHhqqX64fEOUBM')">Click Here </button>
 		</div>
 
 		<div id="side">
@@ -237,30 +133,17 @@
 		</div>
 	</div>
 
-	<div id = "survey" style = "display: none; background-color: white" >
-		<div class= "flex-container" style= "display:flex">
-			<div style="flex:1">
-				<!-- <iframe src="https://cornell.ca1.qualtrics.com/jfe/form/SV_6sOpOUOZAlKigaW" height="1000px" width="1100px"></iframe> -->
-
-				<iframe id = 'qualtlink'  height="1000px" width="1100px"></iframe>
-
-
-
-			</div>
-			<div class= "flex_child" style = "flex:1; margin-top: 100px">
-<!-- 				<h2> Your MTurk ID: <span id="quitGamePlayer"></span></h2>
-				<h2> Partner's ID: <span id ="partnerQuitPlayer"> </span></h2> -->
-				<h2>Score: <span id="quitFinalScore">0</span></h2>
-				<h2> Game ID: AZXIBB_34!@ </h2>
-
-				<button onClick= "codeQualtrics()">CLICK HERE TO COPY GAME ID TO YOUR CLIPBOARD</button>
-
-
-			</div>
-
-		</div>
-	</div>
-
+<!-- Game Over Container -->
+<div id="survey" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center; z-index: 1000;">
+    <div class="flex-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+        <h1 style="margin: 20px; font-size: 48px; color: white;">Game Over! Thank you for playing.</h1>
+        <iframe id="qualtlink" style="display: none;" height="1000px" width="1100px"></iframe>
+        <div style="text-align: center;">
+            <h2>Score: <span id="quitFinalScore">0</span></h2>
+            <!-- <button onClick="codeQualtrics()" style="margin: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer;">CLICK HERE TO COPY GAME ID TO YOUR CLIPBOARD</button> -->
+        </div>
+    </div>
+</div>
 
 
 </body>

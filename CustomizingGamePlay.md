@@ -63,13 +63,30 @@ if ((data.turnCount < MAX_GAME_PLAYERS) || !(consts.USE_TURN_CALC)) {
 
 You can modify the logic by changing parameters in `consts.js` or by adjusting decision algorithms within `blockLandedHandler` to accommodate different gameplay styles or research needs.
 
-## Customizing Distributer
+## Configuring the Allocator Agent
 
-You can customize whether the distributer of blocks is presented as an AI agent or a human. This can be adjusted in the `socket.js` file. The `is_AI` variable can be adjusted as follows:
-- `var is_AI = 0` . This sets the distributer to be presented as an AI agent
-- `var is_AI = 1` . This sets the distributer to presented as a human
+You can customize whether the allocator of blocks is presented as an AI agent or a human. This can be adjusted in the `socket.js` file. The `is_AI` variable can be adjusted as follows:
+- `var is_AI = 0` . This sets the allocator to be presented as an AI agent
+- `var is_AI = 1` . This sets the allocator to presented as a human
 
 If you want to adjust the images or insert your own custom images, this can be done by changing the following files:
-- `../images/AI_Distributer.png` for the AI distributer
-- `../images/MTurkWorker_Distributer.png` for the human distributer
+- `../images/AI_Distributer.png` for the AI allocator
+- `../images/MTurkWorker_Distributer.png` for the human allocator
 
+## Adjusting Gameplay Duration and Postgame Messages
+
+You can customize how long the "Quit Game" button remains hidden by adjusting `setTimeout` in the `views.js` file: 
+
+```javascript
+	activateQuitButton: function(){
+		console.log("enter activate quitButton");
+    	quitButton.style.display = "none";
+    	function displayBtn() {
+    		quitButton.style.display = "inline";
+		}
+		// time used for developement purposes
+		setTimeout(displayBtn, 100); //Adjust how long before the quit button is programmed to appear 
+```
+
+
+When a player clicks on the button to quit the game, you can adjust what message 
