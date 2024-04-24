@@ -66,33 +66,32 @@ npm install
 Navigate to `localhost:3000` in your web browser to see the application running locally. You will need to log in on at least two tabs to connect to the game.
 
 ## Deploying the Game Online
-### Follow the installation steps for running the game on your local computer.
+### 1. Follow the installation steps for running the game on your local computer.
 ### Heroku Deployment
-1. **Log in to your Heroku account via CLI:**
+2. **Log in to your Heroku account via CLI:**
 Run `heroku login` to open the login prompt in your browser. Log in using your Heroku credentials or create a new account if necessary.
-2. **Set up Heroku remote:**
+3. **Set up Heroku remote:**
 After logging in and creating a new Heroku app in your dashboard (if you haven't already), set the remote for your app using:
 ### Heroku Deployment
-3. **Log in to your Heroku account via CLI:**
+4. **Log in to your Heroku account via CLI:**
 Run `heroku login` to open the login prompt in your browser. Log in using your Heroku credentials or create a new account if necessary.
-4. **Set up Heroku remote:**
+5. **Set up Heroku remote:**
 After logging in and creating a new Heroku app in your dashboard (if you haven't already), set the remote for your app using:
 ```
 heroku git:remote -a your-heroku-app-name
 ```
-
 Replace `your-heroku-app-name` with the name of your app on Heroku.
-3. **Push to Heroku:**
+6. **Push to Heroku:**
 Deploy your application by pushing the local repository to the Heroku remote:
 
 ```
 git push heroku master
 ```
 
-4. **Ensure the MongoDB URI is set in Heroku:**
+7. **Ensure the MongoDB URI is set in Heroku:**
 Set your environment variables (s`MONGO_URI`) in Heroku's settings under "Config Vars" to match those in your `.env` file.
 
-### Running the Application on Heroku
+8. ### Running the Application on Heroku
 Navigate to your application's URL provided by Heroku to see your Co-Tetris game live.
 
 
