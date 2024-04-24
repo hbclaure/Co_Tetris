@@ -1,6 +1,7 @@
 # Co-Tetris :video_game:
-![tetrisGIF](https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/bf8dd158-aaa5-48af-9919-0ed996113f57)
-
+<p align="center">
+  <img src="https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/bf8dd158-aaa5-48af-9919-0ed996113f57" alt="tetrisGIF">
+</p>
 
 Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
