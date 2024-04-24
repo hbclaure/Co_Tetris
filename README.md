@@ -37,8 +37,33 @@ https://account.mongodb.com/account/login?signedOut=true
 
 ### Installation
 1. Clone repository onto local machine.
-2. Navigate to local respository folder 'Final_Tetris_Jan2020' in Terminal.
-3. Create .env file in top folder of local repository. <br> 
+```
+git clone CoTetris
+```
+2. Navigate to local respository folder.
+
+3. Create a `.env` file in the top directory of your local repository
+
+4. **Set up your MongoDB connection:**
+Add the following to your `.env` file, replacing `username`, `password`, and `your-database-url` with your MongoDB credentials:
+```
+MONGO_URI=mongodb+srv://username:password@your-database-url/collab_tetris_dev?retryWrites=true&w=majority
+```
+- `username`: Your MongoDB username
+- `password`: Your MongoDB password
+- `your-database-url`: The URL provided by MongoDB when you set up your cluster
+
+5. **Install dependencies:**
+```
+npm install
+```
+
+6. **Run the application:**
+Navigate to `localhost:3000` in your web browser to see the application running locally on your machine.
+
+
+
+Create .env file in top folder of local repository. <br> 
 Copy the following into the .env file. <br> 
 #Mongo DB connection information <br> 
 MONGO_URI  = mongodb+srv://hbclaure:Tetrisgame123@cluster0-uygx4.mongodb.net/collab_tetris_dev?retryWrites=true&w=majority
