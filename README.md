@@ -8,6 +8,8 @@ A live version of the game can be found here.
 This was developed by Houston Claure, Se Yun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung and Malte Jung at Cornell University and Jignesh Modi and Stefanos Nicholaidis at the University of Southern California. 
 
 ### Game Visuals 
+https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-acbb-2e6b408fbb32
+
 
 <p align = "center">
 <video src="public/video/tetris_vid.mp4" width="600"/> 
