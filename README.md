@@ -1,4 +1,7 @@
 # Co-Tetris :video_game:
+![tetrisGIF](https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/bf8dd158-aaa5-48af-9919-0ed996113f57)
+
+
 Co-Tetris is a multiplayer game based on the popular arcade game Tetris.
 
 The objective of the Co-Tetris is for multiple players to collaborate (or compete) to obtain the highest possible score. A third preprogrammed player is charged with decididng who gets access to the falling Tetris block. This repository enables you to run your own version of the game, either locally or online.
