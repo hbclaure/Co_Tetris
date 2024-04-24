@@ -24,7 +24,7 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 - Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction. 
 
 
-## Running the Game on Your Local Computer or Online
+## Running the Game on Your Local Computer
 
 ### Requirements
 1. **Node.js & NPM** - Required for running the server and installing dependencies.
@@ -62,22 +62,22 @@ npm install
 ```
 
 ### Running Locally
-1. **Run Co-Tetris on your local computer:**
+6. **Run Co-Tetris on your local computer:**
 Navigate to `localhost:3000` in your web browser to see the application running locally. You will need to log in on at least two tabs to connect to the game.
 
 ## Deploying the Game Online
+### Follow the installation steps for running the game on your local computer.
 ### Heroku Deployment
 1. **Log in to your Heroku account via CLI:**
 Run `heroku login` to open the login prompt in your browser. Log in using your Heroku credentials or create a new account if necessary.
 2. **Set up Heroku remote:**
 After logging in and creating a new Heroku app in your dashboard (if you haven't already), set the remote for your app using:
 ### Heroku Deployment
-1. **Log in to your Heroku account via CLI:**
+3. **Log in to your Heroku account via CLI:**
 Run `heroku login` to open the login prompt in your browser. Log in using your Heroku credentials or create a new account if necessary.
-2. **Set up Heroku remote:**
+4. **Set up Heroku remote:**
 After logging in and creating a new Heroku app in your dashboard (if you haven't already), set the remote for your app using:
 ```
-
 heroku git:remote -a your-heroku-app-name
 ```
 
@@ -86,13 +86,11 @@ Replace `your-heroku-app-name` with the name of your app on Heroku.
 Deploy your application by pushing the local repository to the Heroku remote:
 
 ```
-
 git push heroku master
-
 ```
 
 4. **Ensure the MongoDB URI is set in Heroku:**
-Set your environment variables (such as `MONGO_URI`) in Heroku's settings under "Config Vars" to match those in your `.env` file.
+Set your environment variables (s`MONGO_URI`) in Heroku's settings under "Config Vars" to match those in your `.env` file.
 
 ### Running the Application on Heroku
 Navigate to your application's URL provided by Heroku to see your Co-Tetris game live.
