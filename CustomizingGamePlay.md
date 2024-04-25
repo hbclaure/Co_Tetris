@@ -86,3 +86,7 @@ activateQuitButton: function(){
     // time used for developement purposes
     setTimeout(displayBtn, 100); //Adjust how long before the quit button is programmed to appear 
 ```
+
+## Ghost Player Suggestions
+
+You can active the Ghost Player feature which allows the inactive player to give recommendations on where the active player should drop the falling Tetris block. This can be done by switching the `var useGhostShape = false` to `var useGhostShape = true;` in the `consts.js` file. 

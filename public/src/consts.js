@@ -52,7 +52,7 @@ var numplayers = 2;
 var useTurnCalc = false;
 
 // Turn on/off ghost shape
-var useGhostShape = false;
+var useGhostShape = true;
 
 // Game speed (milliseconds)
 var defaultInterval = 600;
