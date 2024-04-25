@@ -11,7 +11,7 @@ The objective of the Co-Tetris is for multiple players to collaborate (or compet
 
 A live version of the game can be found here. Note that gameplay requires two people to log in simultaneously:
 ```
-cooptetris.herokuapp.com
+https://cotetris2.herokuapp.com/
 ```
 This game was developed at Cornell University by [Houston Claure](https://www.houstonclaure.com), [Seyun Kim](https://www.seyunkim.com), Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and [Malte Jung](https://mjung.infosci.cornell.edu), in collaboration with Jignesh Modi and [Stefanos Nicholaidis](http://www.stefanosnikolaidis.net) from the University of Southern California. 
 
