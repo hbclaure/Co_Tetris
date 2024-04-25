@@ -86,6 +86,7 @@ After logging in and creating a new Heroku app in your dashboard (if you haven't
 heroku git:remote -a your-heroku-app-name
 ```
 Replace `your-heroku-app-name` with the name of your app on Heroku.
+
 6. **Push to Heroku:**
 Deploy your application by pushing the local repository to the Heroku remote:
 
