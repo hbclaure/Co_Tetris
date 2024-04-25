@@ -88,5 +88,6 @@ activateQuitButton: function(){
 ```
 
 ## Ghost Player Feature
+![ghost_feature](https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/39af902e-c8ff-430d-8c3a-aa52da2e6de4)
 
 You can active the Ghost Player feature which allows the inactive player to give recommendations on where the active player should drop the falling Tetris block. This can be activated by switching the `var useGhostShape = false` to `var useGhostShape = true;` in the `consts.js` file. 
