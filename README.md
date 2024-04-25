@@ -103,6 +103,7 @@ Set your environment variables (s`MONGO_URI`) in Heroku's settings under "Config
 [Click here](CustomizingGamePlay.md) to learn how to customize the Co-Tetris game. 
 
 
-
+## Contact
+Questions? Contact Houston Claure at houston.claure@yale.edu. 
 
 
