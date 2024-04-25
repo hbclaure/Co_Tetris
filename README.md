@@ -20,7 +20,7 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 
 
 <p align = "center">
-<video src="public/video/tetris_vid.mp4" width="600"/> 
+<video src="https://github.com/hbclaure/Co_Tetris/assets/16567310/f745fc3a-d39a-4021-98b8-b55f8b7715b4" width="600"/> 
 <br> </br>
 </p>
 
@@ -28,6 +28,10 @@ https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/86e6811b-2243-4a03-
 - Claure, H., Kim, S., Kizilcec, R. F., & Jung, M. (2023). The social consequences of machine allocation behavior: Fairness, interpersonal perceptions and performance. Computers in Human Behavior. [[Paper]](public/papers/CIHB_SocialConsequences.pdf) 
 
 - Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction. [[Paper]](public/papers/MAB_HRI.pdf) [[Code]](https://github.com/icaros-usc/MAB_Fairness)
+
+
+https://github.com/hbclaure/Co_Tetris/assets/16567310/f745fc3a-d39a-4021-98b8-b55f8b7715b4
+
 
 
 ## Running the Game on Your Local Computer
