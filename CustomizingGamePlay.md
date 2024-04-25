@@ -89,7 +89,7 @@ activateQuitButton: function(){
 
 ## Ghost Player Feature
 <p align="center">
-  <img src="https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/39af902e-c8ff-430d-8c3a-aa52da2e6de4" alt="tetrisGIF">
+  <img src="" alt="tetrisGIF">
 </p>
 
 
