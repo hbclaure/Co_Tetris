@@ -1,4 +1,5 @@
 const path = require('path');
+//main.js
 
 module.exports = {
   entry: './public/src/main.js',

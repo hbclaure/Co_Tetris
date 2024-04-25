@@ -119,7 +119,6 @@ async function generateRecords() {
                
 
                   if (matrix !== undefined){
-                    // console.log("does the matrix exist", matrix)
                     matrixString = ""
 
                     for (let i =0; i < matrix.length; i++) {
