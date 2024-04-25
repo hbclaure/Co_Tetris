@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// basic Analysis is use
+// basic Analysis 
 
 const BlockEntrySchema = new mongoose.Schema({
   gameId: {
