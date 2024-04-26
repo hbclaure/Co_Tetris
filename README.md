@@ -68,6 +68,9 @@ npm install
 
 ### Running Locally
 6. **Run Co-Tetris on your local computer:**
+```
+npm run dev
+```
 Navigate to `localhost:3000` in your web browser to see the application running locally. You will need to log in on at least two tabs to connect to the game.
 
 ## Deploying the Game Online
