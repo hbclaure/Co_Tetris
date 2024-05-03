@@ -1,11 +1,12 @@
 # Co-Tetris :video_game:
-<!-- <p align="center">
+<p align="center">
   <img src="https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/bf8dd158-aaa5-48af-9919-0ed996113f57" alt="tetrisGIF">
-</p> -->
-[![Watch the video]](https://youtu.be/gu6kT1MdXkU)
+</p>
 
 
-<p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents.</i></p>
+
+
+<p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents. [![Watch the video.]](https://youtu.be/gu6kT1MdXkU) </i></p>
 
 ### Introduction
 
