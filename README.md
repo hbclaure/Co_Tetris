@@ -1,7 +1,9 @@
 # Co-Tetris :video_game:
-<p align="center">
+<!-- <p align="center">
   <img src="https://github.com/hbclaure/Co_Tetris_n_2021/assets/16567310/bf8dd158-aaa5-48af-9919-0ed996113f57" alt="tetrisGIF">
-</p>
+</p> -->
+[![Watch the video]](https://youtu.be/gu6kT1MdXkU)
+
 
 <p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents.</i></p>
 
@@ -15,17 +17,20 @@ https://cotetris2.herokuapp.com/
 ```
 This game was developed at Cornell University by [Houston Claure](https://www.houstonclaure.com), [Seyun Kim](https://www.seyunkim.com), Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and [Malte Jung](https://mjung.infosci.cornell.edu), in collaboration with Jignesh Modi and [Stefanos Nicholaidis](http://www.stefanosnikolaidis.net) from the University of Southern California. 
 
-### Co-Tetris Demonstration
+### Co-Tetris Video
 
-<p align = "center">
-<video src="https://github.com/hbclaure/Co_Tetris/assets/16567310/f745fc3a-d39a-4021-98b8-b55f8b7715b4" width="600"/> 
-<br> </br>
-</p>
 
 ## Research Papers Using Co-Tetris
 - Claure, H., Kim, S., Kizilcec, R. F., & Jung, M. (2023). The social consequences of machine allocation behavior: Fairness, interpersonal perceptions and performance. Computers in Human Behavior. [[Paper]](public/papers/CIHB_SocialConsequences.pdf) 
 
 - Claure, H., Chen, Y., Modi, J., Jung, M., & Nikolaidis, S. (2020). Multi-armed bandits with fairness constraints for distributing resources to human teammates. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction. [[Paper]](public/papers/MAB_HRI.pdf) [[Code]](https://github.com/icaros-usc/MAB_Fairness)
+
+### Co-Tetris Research Demonstration
+
+<p align = "center">
+<video src="https://github.com/hbclaure/Co_Tetris/assets/16567310/f745fc3a-d39a-4021-98b8-b55f8b7715b4" width="600"/> 
+<br> </br>
+</p>
 
 
 
