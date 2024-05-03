@@ -6,13 +6,10 @@
 
 
 
-<p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents. [![Everything Is AWESOME](https://img.youtube.com/vi/gu6kT1MdXkU/0.jpg)](https://www.youtube.com/watch?v=gu6kT1MdXkU "Everything Is AWESOME") </i> </p>
+<p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents. [Click here to watch a video of Co-Tetris] (https://www.houstonclaure.com) </i> </p>
 
 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=gu6kT1MdXkU" target="_blank">
- <img src="http://img.youtube.com/vi/gu6kT1MdXkU/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
-</a>
 
 ### Introduction
 
