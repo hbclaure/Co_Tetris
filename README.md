@@ -6,7 +6,7 @@
 
 
 
-<p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents. [![Watch the video.]](https://youtu.be/gu6kT1MdXkU) </i></p>
+<p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents. [![Logo](/CoTetris_logo.png)](https://youtu.be/gu6kT1MdXkU) </i></p>
 
 ### Introduction
 
