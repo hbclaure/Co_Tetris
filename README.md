@@ -8,6 +8,8 @@
 
 <p align="center"><i>Co-Tetris is a research platform designed to study cooperative and competitive strategies in multiplayer scenarios, using the classic Tetris game as a framework for analyzing interactions between humans and AI agents. [![Everything Is AWESOME](https://img.youtube.com/vi/gu6kT1MdXkU/0.jpg)](https://www.youtube.com/watch?v=gu6kT1MdXkU "Everything Is AWESOME") </i> </p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gu6kT1MdXkU?si=HM6BAek32SmFd9I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Introduction
 
 The objective of the Co-Tetris is for multiple players to collaborate (or compete) to obtain the highest possible score. A third preprogrammed player is charged with decididng who gets access to the falling Tetris block. This repository enables you to run your own version of the game, either locally or online. Co-Tetris has been utilized for deploying reinforcement learning algorithms and studying how humans respond to AI-driven allocation decisions.
