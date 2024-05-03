@@ -21,7 +21,8 @@ A live version of the game can be found here. Note that gameplay requires two pe
 ```
 https://cotetris2.herokuapp.com/
 ```
-Co-Tetris was developed and supported by Houston Claure, Seyun Kim, Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and Malte Jung from Cornell University, Connor Brown from Yale University, and Jignesh Modi and Stefanos Nicholaidis from the University of Southern California. 
+
+Co-Tetris was developed and supported by [Houston Claure](https://www.houstonclaure.com), [Seyun Kim](https://www.seyunkim.com), Winnice Hui, Obinna Abbi, Hyun Kyo Jung, and [Malte Jung](https://mjung.infosci.cornell.edu) from Cornell University, Connor Brown from Yale University, and Jignesh Modi and [Stefanos Nicholaidis](http://www.stefanosnikolaidis.net) from the University of Southern California. 
 
 ### Co-Tetris Video
 
